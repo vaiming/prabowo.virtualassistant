@@ -7,42 +7,47 @@
   position: sticky;
   top: 0;
   background-color: #fff;
+
   @media screen and (min-width: 1250px) {
     justify-content: space-between;
     flex-direction: row;
   }
+
   .nav-logo {
     align-self: flex-start;
     padding: 10px 5px 5px;
+
     a {
       img {
         max-width: 200px;
         height: auto;
+
         @media screen and (min-width: 768px) {
           max-width: 314px;
-          height: auto;
         }
       }
     }
   }
+
   .nav-links {
     display: none;
     width: 100%;
-    // background-color: #def0ff;
+
     @media screen and (min-width: 1250px) {
       display: block;
       background-color: #fff;
     }
+
     ul {
-      background-color:#F7F8FA;
+      background-color: #F7F8FA;
       padding: 0;
       margin: 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      // prevent dropdown menu from pushing content down
       position: absolute;
       width: 100%;
+
       @media screen and (min-width: 1250px) {
         flex-direction: row;
         position: static;
@@ -51,61 +56,63 @@
 
       li {
         list-style: none;
-        // prevent dropdown menu from pushing content down
         position: relative;
+
         a {
-          font-size: 14px;                /* calmer, more professional */
-          text-transform: none;           /* uppercase feels marketing */
+          font-size: 14px;
           font-weight: 500;
-          color: #475569;                 /* slate gray */
+          text-transform: none;
+          color: #475569;
           letter-spacing: 0.3px;
           padding: 10px 15px;
           text-decoration: none;
           display: block;
         }
-      }
-      li:hover {
-        background-color: #0B1F3B;
+
+        &:hover {
+          background-color: #0B1F3B;
+        }
       }
     }
   }
+
   button {
-  cursor: pointer;
-  background: #F7F8FA;
+    cursor: pointer;
+    background-color: #F7F8FA;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
 
-  /* subtle, professional border */
-  border: 1px solid #E5E7EB;
-  border-radius: 10px;
+    width: 44px;
+    height: 40px;
+    max-width: 50px;
 
-  max-width: 50px;
-  width: 44px;
-  height: 40px;
+    display: grid;
+    place-items: center;
 
-  display: grid;
-  place-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    transition: border-color 120ms ease, background-color 120ms ease;
 
-  transition: border-color 120ms ease, background-color 120ms ease;
+    @media screen and (min-width: 768px) {
+      top: 14px;
+    }
 
-  @media screen and (min-width: 768px) {
-    top: 14px;
-  }
+    @media screen and (min-width: 1250px) {
+      display: none;
+    }
 
-  @media screen and (min-width: 1250px) {
-    display: none;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: #2F6FED; /* muted blue */
-    background-color: #FFFFFF;
-    outline: none;
+    &:hover,
+    &:focus {
+      border-color: #2F6FED;
+      background-color: #FFFFFF;
+      outline: none;
+    }
   }
 }
 
+/* toggle menu */
 .nav-links.active {
   display: block;
 }
