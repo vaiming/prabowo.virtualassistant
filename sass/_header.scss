@@ -34,7 +34,7 @@
       background-color: #fff;
     }
     ul {
-      background-color: rgba($color: #def0ff, $alpha: 0.95);
+      background-color:#F7F8FA;
       padding: 0;
       margin: 0;
       display: flex;
@@ -54,27 +54,27 @@
         // prevent dropdown menu from pushing content down
         position: relative;
         a {
-          font-size: 18px;
-          text-transform: uppercase;
-          font-family: 400;
-          color: #7f53ac;
-          letter-spacing: 1.2px;
+          font-size: 14px;                /* calmer, more professional */
+          text-transform: none;           /* uppercase feels marketing */
+          font-weight: 500;
+          color: #475569;                 /* slate gray */
+          letter-spacing: 0.3px;
           padding: 10px 15px;
           text-decoration: none;
           display: block;
         }
       }
       li:hover {
-        background-color: #efe0ff;
+        background-color: #0B1F3B;
       }
     }
   }
   button {
   cursor: pointer;
-  background: transparent;
+  background: #F7F8FA;
 
   /* subtle, professional border */
-  border: 1px solid rgba(229, 231, 235, 0.35);
+  border: 1px solid #E5E7EB;
   border-radius: 10px;
 
   max-width: 50px;
@@ -100,8 +100,8 @@
 
   &:hover,
   &:focus {
-    border-color: rgba(47, 111, 237, 0.65); /* muted blue */
-    background-color: rgba(255, 255, 255, 0.04);
+    border-color: #2F6FED; /* muted blue */
+    background-color: #FFFFFF;
     outline: none;
   }
 }
