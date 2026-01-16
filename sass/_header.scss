@@ -70,22 +70,42 @@
     }
   }
   button {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    max-width: 50px;
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    @media screen and (min-width: 768px) {
-      top: 20px;
-    }
-    @media screen and (min-width: 1250px) {
-      display: none;
-    }
+  cursor: pointer;
+  background: transparent;
+
+  /* subtle, professional border */
+  border: 1px solid rgba(229, 231, 235, 0.35);
+  border-radius: 10px;
+
+  max-width: 50px;
+  width: 44px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  transition: border-color 120ms ease, background-color 120ms ease;
+
+  @media screen and (min-width: 768px) {
+    top: 14px;
+  }
+
+  @media screen and (min-width: 1250px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: rgba(47, 111, 237, 0.65); /* muted blue */
+    background-color: rgba(255, 255, 255, 0.04);
+    outline: none;
   }
 }
+
 .nav-links.active {
   display: block;
 }
