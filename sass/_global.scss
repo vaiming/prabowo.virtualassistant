@@ -8,67 +8,66 @@
 html {
   line-height: 1.15;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Oxygen', sans-serif;
   position: relative;
-
   background: var(--offwhite);
   color: var(--slate);
-  0cc0a4d (navigation style)
 }
+
 section {
   padding: 90px 15px;
 }
+
 .content {
   max-width: 1200px;
   display: block;
   margin: 0 auto;
 }
+
 p {
   font-size: 18px;
   margin: 5px 0 10px;
 }
+
 .bold {
   font-weight: 700;
 }
+
 .orange {
- HEAD
-  color: #FF5100
   color: var(--accent);
-  0cc0a4d (navigation style)
 }
+
 h2 {
   font-size: 36px;
   margin: 5px 0 10px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 70px;
-    color: #848484;
-
   color: var(--navy);
 
   @media screen and (min-width: 768px) {
     font-size: 70px;
-    color: var(--navy);
-    cc0a4d (navigation style)
     font-weight: 700;
+    color: var(--navy);
   }
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .center {
   text-align: center;
-  HEAD
 }
 
-}
-
+/* =========================
+   System Button
+   ========================= */
 .btn-system {
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
@@ -84,7 +83,9 @@ img {
   text-decoration: none;
   cursor: pointer;
 
-  transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
+  transition: color 120ms ease,
+              background-color 120ms ease,
+              border-color 120ms ease;
 }
 
 .btn-system:hover {
@@ -92,4 +93,3 @@ img {
   background-color: var(--accent);
   border-color: var(--accent);
 }
-  0cc0a4d (navigation style)
