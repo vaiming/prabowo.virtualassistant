@@ -1,11 +1,5 @@
-# Animated portfolio website template
-This repository is an extended version of another [portfolio template](https://shihabiiuc.github.io/portfolio/index.html) that is also created by me. In this portfolio template, I only added JavaScript animation (AOS). You can check the finished product [here](https://shihabiiuc.github.io/animated-portfolio/index.html).
-
+# Portfolio website template
 This an one page portfolio template that you can download and use on your own project or to create a website. You are allowed to edit and make your portfolio website exactly the way you want.
-
-_However, you're **not allowed to make it available for download on any other websites** or you can't exchange this template with any commercial intent._
-
-This portfolio template is a part of my blog post and the [detail instruction can be found on the actual post.](https://shihabiiuc.com/animated-portfolio-website)
 
 ## Which niche best suits this template
 I created this template for everyone who wants to create an online portfolio. Though it represents a **freelance graphic designer**. Yet, it's very easy to make changes to fit other industries. Such as **web designer, freelance writer, SEO expert, you name it.** This would be a great start if you're just getting started and thinking to build your portfolio. _I already did the heavy lifting for you._
